@@ -1,0 +1,15 @@
+$color-principal: #3C2313;
+$color-secundario: #F0A83E;
+$color-texto-sec:#666666;
+$color-texto-btn: #FFFFFF;
+$color-texto-footer: #8A8787;
+
+body{
+    margin: 0;
+}
+header{
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: repeat(2, 30%);
+    background-color: aquamarine;
+}

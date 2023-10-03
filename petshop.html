@@ -15,51 +15,80 @@
             <div>$ARG</div><!--parece que esto lo idearon como una lista-->
         </div>
         <div class="barra-secundaria">
-            <img src="img/Logo.png" alt="logoPetshop">
-        <ul type="none">
-            <li><i class="fa-solid fa-paw" style="color: #ffffff;"></i>Categorías</li>
-            <li><i class="fa-solid fa-paw" style="color: #ffffff;"></i>Pets</li>
-            <li><i class="fa-solid fa-paw" style="color: #ffffff;"></i>Nosotros</li>
-            <li><i class="fa-solid fa-paw" style="color: #ffffff;"></i>Contactanos</li>
-        </ul>
+            <div class="logoPrincipal"></div>
+            <div class="hamburguesa"></div>
+            <!-- <img src="img/Logo.png" alt="logoPetshop"> -->
+            <ul type="none" class="infoPrincipal">
+                <li><i class="fa-solid fa-paw" style="color: #ffffff;"></i>Categorías</li>
+                <li><i class="fa-solid fa-paw" style="color: #ffffff;"></i>Pets</li>
+                <li><i class="fa-solid fa-paw" style="color: #ffffff;"></i>Nosotros</li>
+                <li><i class="fa-solid fa-paw" style="color: #ffffff;"></i>Contactanos</li>
+            </ul>
         </div>
     </header>
 
     <main>
-        <div class="titulo1">¡Es un placer tenerte aquí!</div>
         <section class="banner">
+            <div class="titulo1">¡Es un placer tenerte aquí!</div>
             <!--<img src="img/bowl-background 1.png" alt="banner-bowl">-->
             <div class="titulo2">¡Comederos en descuento!</div>
-            <div class="titulo3">COMEDEROS</div>  
+            <button class="btnComederos">COMEDEROS</button>  
         </section>
 
         <section class="productos">
-            <img src="img/pawprint 2.png" alt="patita">
-            <div class="TProductos">Productos Destacados</div>
+            <div class="imgPatita"></div>
+            <!-- <img src="img/pawprint 2.png" alt="patita"> -->
+            <h1>Productos Destacados</h1>
+            <!-- <div class="TProductos"></div> -->
             <div>
-                <span>Comederos</span>
-                <span>Accesorios</span>
-                <span>Comida</span>
+                <span><a href="#">Comederos -</a></span>
+                <span><a href="#">Accesorios -</a></span>
+                <span><a href="#">Comida</a></span>
             </div>
+        </section>
+
+        <section class="imagenesProductos">
             <div>
-                <img src="img/churrasquito.png" alt="churrasquito">
+                <div class="itemChu"></div>
+                <!-- <img src="img/churrasquito.png" alt="churrasquito"> -->
                 <p>Juguete Churrasquito</p>
                 <p class="precio">$150</p>
             </div>
             <div>
-                <img src="img/comedero.png" alt="churrasquito">
+                <div class="itemCome"></div>
+                <!-- <img src="img/comedero.png" alt="churrasquito"> -->
                 <p>Comedero para perro</p>
                 <p class="precio">$250</p>
             </div>
             <div>
-                <img src="img/Huesito.png" alt="churrasquito">
+                <div class="itemHueso"></div>
+                <!-- <img src="img/Huesito.png" alt="churrasquito"> -->
                 <p>Juguete Huesito</p>
                 <p class="precio">$650</p>
             </div>
         </section>
 
+        <section>
+            <form action="none" method="post">
+                <h1>Contáctanos</h1>
+                <input type="text" name="nombreAp" class="nombreApellido" placeholder="Nombre y Apellido">
+                <input type="text" name="correo" class="correo" placeholder="Ingresá tu correo electrónico">
+                <input type="text" name="telefono" class="telefono" placeholder="Teléfono">
+                <input type="reset" name="resetear" value="Resetear" class="btnReset">
+                <input type="submit" name="enviar" value="Enviar" class="btnSubmit">
+            </form>
+        </section>
+
     </main>
     <footer>
+        <div class="barraNovedades">
+            <div class="iconEmail"></div>
+            <span>Susbríbete para más novedades</span>
+            <form action="none" method="post">
+                <input type="text" name="correo" class="correo2" placeholder="Ingresá tu correo electrónico">
+                <input type="submit" name="susbribirse" class="btnSub" value="Suscribirme"> <!--falta id?-->
+            </form>
+        </div>
         <div class="socialIcon">
             <div class="localidad">
                 <img src="img/location-icon.png" alt="location">
