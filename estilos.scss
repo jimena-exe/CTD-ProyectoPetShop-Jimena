@@ -7,7 +7,14 @@ $color-texto-footer: #8A8787;
 
 body{
     margin: 0;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
+
+/*
+@mixin display{
+    display: flex;
+    justify-content: center;
+}*/
 
 /*MOBILE FIRST*/
 @media (max-width:480px){
@@ -17,8 +24,8 @@ body{
     .barra-secundaria{
         align-items: center;
         background-color: $color-secundario;
-        height: 54px;
         display: flex;
+        height: 54px; 
         justify-content: space-between;
         padding: 0 20px 0 20px;
 
@@ -36,6 +43,54 @@ body{
         .infoPrincipal{
             display: none;
         }
+    }
+
+    .banner{
+        align-items: center;
+        background-image: url(img/bowl-background\ 1.png);
+        background-size:cover;  // arreglar la imagen, aparece muy grande.
+        display: flex;
+        justify-content: center;
+        height: 440px;
+        width: 100%;      
+        /*@include display;*/
+
+        .info-banner{
+            align-items: flex-end;
+            color: $color-principal;
+            display: flex;
+            flex-direction: column;
+            height: 140px;
+            justify-content: flex-start;
+            width: 370px;  
+        }
+        .titulo1{
+            background-color: $color-texto-btn;
+            border-radius: 5px;
+            font-size: 25px;
+            height: 54px;
+            padding-top: 15px;
+            text-align:  center;
+            width: 365px;
+        }
+        .btnComederos{
+            background-color: $color-secundario;
+            border-radius: 5px;
+            border-style: none;
+            color: $color-texto-btn;
+            font-size: 16px;
+            height: 49px;
+            width: 141px;
+        }
+        
+    }
+}
+
+
+/*SMARTPHONES MÁS GRANDES, LANDSCAPE Y TABLETS*/
+@media (min-width: 481px) AND (max-width: 768px){
+    header{
+        background-color: $color-principal;
     }
 }
 
