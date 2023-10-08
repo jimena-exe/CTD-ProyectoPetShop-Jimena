@@ -1,5 +1,6 @@
 $color-principal: #3C2313;
 $color-secundario: #F0A83E;
+$color-barra1: #222222;
 $color-texto-sec:#666666;
 $color-texto-btn: #FFFFFF;
 $color-texto-footer: #8A8787;
@@ -7,9 +8,34 @@ $color-texto-footer: #8A8787;
 body{
     margin: 0;
 }
-header{
-    display: grid;
-    grid-template-columns: 100%;
-    grid-template-rows: repeat(2, 30%);
-    background-color: aquamarine;
+
+/*MOBILE FIRST*/
+@media (max-width:480px){
+    .barra-superior{
+        display: none;
+    }
+    .barra-secundaria{
+        align-items: center;
+        background-color: $color-secundario;
+        height: 54px;
+        display: flex;
+        justify-content: space-between;
+        padding: 0 20px 0 20px;
+
+        .logoPrincipal{
+            background-image: url(img/Logo.png);
+            width: 167px;
+            height: 19px;
+        }
+        .hamburguesa{
+            background-image: url(img/menu-icon1.png);
+            height: 20px;
+            width: 20px;
+            
+        }
+        .infoPrincipal{
+            display: none;
+        }
+    }
 }
+

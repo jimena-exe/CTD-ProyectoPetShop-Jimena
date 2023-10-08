@@ -2,9 +2,30 @@ body {
   margin: 0;
 }
 
-header {
-  display: grid;
-  grid-template-columns: 100%;
-  grid-template-rows: repeat(2, 30%);
-  background-color: aquamarine;
+/*MOBILE FIRST*/
+@media (max-width: 480px) {
+  .barra-superior {
+    display: none;
+  }
+  .barra-secundaria {
+    align-items: center;
+    background-color: #F0A83E;
+    height: 54px;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 20px 0 20px;
+  }
+  .barra-secundaria .logoPrincipal {
+    background-image: url(img/Logo.png);
+    width: 167px;
+    height: 19px;
+  }
+  .barra-secundaria .hamburguesa {
+    background-image: url(img/menu-icon1.png);
+    height: 20px;
+    width: 20px;
+  }
+  .barra-secundaria .infoPrincipal {
+    display: none;
+  }
 }/*# sourceMappingURL=estilos.css.map */
