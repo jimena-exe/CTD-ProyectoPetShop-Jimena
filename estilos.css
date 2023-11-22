@@ -16,7 +16,7 @@ body {
   }
   .barra-secundaria {
     align-items: center;
-    background-color: #F0A83E;
+    background-color: #f0a83e;
     display: flex;
     height: 54px;
     justify-content: space-between;
@@ -47,7 +47,7 @@ body {
   }
   .banner .info-banner {
     align-items: flex-end;
-    color: #3C2313;
+    color: #3c2313;
     display: flex;
     flex-direction: column;
     height: 140px;
@@ -55,7 +55,7 @@ body {
     width: 370px;
   }
   .banner .titulo1 {
-    background-color: #FFFFFF;
+    background-color: #ffffff;
     border-radius: 5px;
     font-size: 25px;
     height: 54px;
@@ -64,18 +64,86 @@ body {
     width: 365px;
   }
   .banner .btnComederos {
-    background-color: #F0A83E;
+    background-color: #f0a83e;
     border-radius: 5px;
     border-style: none;
-    color: #FFFFFF;
+    color: #ffffff;
     font-size: 16px;
     height: 49px;
     width: 141px;
+  }
+  .productos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+  }
+  .productos .imgPatita {
+    background-image: url(img/pawprint\ 2.png);
+    background-size: cover;
+    height: 87.95px;
+    width: 90.38px;
+  }
+  .productos h1 {
+    color: #3c2313;
+    font-size: 40px;
+    font-weight: 700;
+    margin-top: 5px;
+    text-align: center;
+    width: 212.89px;
+  }
+  .productos div {
+    display: flex;
+    width: 400px;
+    margin: 10px;
+    justify-content: space-evenly;
+  }
+  .productos a {
+    text-decoration: none;
+    color: #8a8787;
+  }
+  .imagenesProductos {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 40px;
+  }
+  .imagenesProductos div {
+    align-items: center;
+    background-color: #FBFAF6;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+    width: 239px;
+  }
+  .imagenesProductos div .itemChu {
+    background-image: url("img/churrasquito.png");
+    height: 245.92px;
+    width: 239px;
+  }
+  .imagenesProductos div .itemCome {
+    background-image: url("img/comedero.png");
+    height: 245.92px;
+    width: 239px;
+  }
+  .imagenesProductos div .itemHueso {
+    background-image: url("img/Huesito.png");
+    height: 245.92px;
+    width: 239px;
+  }
+  .imagenesProductos div p {
+    margin: 0;
+    font-size: 13px;
+    font-weight: 600;
+    color: #3c2313;
+  }
+  .imagenesProductos div .precio {
+    color: #f0a83e;
   }
 }
 /*SMARTPHONES MÁS GRANDES, LANDSCAPE Y TABLETS*/
 @media (min-width: 481px) and (max-width: 768px) {
   header {
-    background-color: #3C2313;
+    background-color: #3c2313;
   }
 }/*# sourceMappingURL=estilos.css.map */

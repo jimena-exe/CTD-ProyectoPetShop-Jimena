@@ -1,13 +1,17 @@
-$color-principal: #3C2313;
-$color-secundario: #F0A83E;
+$color-principal: #3c2313;
+$color-secundario: #f0a83e;
 $color-barra1: #222222;
-$color-texto-sec:#666666;
-$color-texto-btn: #FFFFFF;
-$color-texto-footer: #8A8787;
+$color-texto-sec: #666666;
+$color-texto-btn: #ffffff;
+$color-texto-footer: #8a8787;
+$height-img-productos:245.92px;
+$width-img-productos:239px;
+$color-items:#FBFAF6;
 
-body{
-    margin: 0;
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+body {
+  margin: 0;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 }
 
 /*
@@ -17,80 +21,148 @@ body{
 }*/
 
 /*MOBILE FIRST*/
-@media (max-width:480px){
-    .barra-superior{
-        display: none;
+@media (max-width: 480px) {
+  .barra-superior {
+    display: none;
+  }
+  .barra-secundaria {
+    align-items: center;
+    background-color: $color-secundario;
+    display: flex;
+    height: 54px;
+    justify-content: space-between;
+    padding: 0 20px 0 20px;
+
+    .logoPrincipal {
+      background-image: url(img/Logo.png);
+      width: 167px;
+      height: 19px;
     }
-    .barra-secundaria{
-        align-items: center;
-        background-color: $color-secundario;
-        display: flex;
-        height: 54px; 
-        justify-content: space-between;
-        padding: 0 20px 0 20px;
+    .hamburguesa {
+      background-image: url(img/menu-icon1.png);
+      height: 20px;
+      width: 20px;
+    }
+    .infoPrincipal {
+      display: none;
+    }
+  }
 
-        .logoPrincipal{
-            background-image: url(img/Logo.png);
-            width: 167px;
-            height: 19px;
-        }
-        .hamburguesa{
-            background-image: url(img/menu-icon1.png);
-            height: 20px;
-            width: 20px;
-            
-        }
-        .infoPrincipal{
-            display: none;
-        }
+  .banner {
+    align-items: center;
+    background-image: url(img/bowl-background\ 1.png);
+    background-size: cover; // arreglar la imagen, aparece muy grande.
+    display: flex;
+    justify-content: center;
+    height: 440px;
+    width: 100%;
+    /*@include display;*/
+
+    .info-banner {
+      align-items: flex-end;
+      color: $color-principal;
+      display: flex;
+      flex-direction: column;
+      height: 140px;
+      justify-content: flex-start;
+      width: 370px;
+    }
+    .titulo1 {
+      background-color: $color-texto-btn;
+      border-radius: 5px;
+      font-size: 25px;
+      height: 54px;
+      padding-top: 15px;
+      text-align: center;
+      width: 365px;
+    }
+    .btnComederos {
+      background-color: $color-secundario;
+      border-radius: 5px;
+      border-style: none;
+      color: $color-texto-btn;
+      font-size: 16px;
+      height: 49px;
+      width: 141px;
+    }
+  }
+
+  .productos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+
+    .imgPatita {
+      background-image: url(img/pawprint\ 2.png);
+      background-size: cover;
+      height: 87.95px;
+      width: 90.38px;
     }
 
-    .banner{
-        align-items: center;
-        background-image: url(img/bowl-background\ 1.png);
-        background-size:cover;  // arreglar la imagen, aparece muy grande.
+    h1 {
+      color: $color-principal;
+      font-size: 40px;
+      font-weight: 700;
+      margin-top: 5px;
+      text-align: center;
+      width: 212.89px;
+    }
+    div {
         display: flex;
-        justify-content: center;
-        height: 440px;
-        width: 100%;      
-        /*@include display;*/
-
-        .info-banner{
-            align-items: flex-end;
+        width: 400px;
+        margin: 10px;
+        justify-content: space-evenly;
+    }
+    a {
+        text-decoration: none;
+        color: $color-texto-footer;
+    }
+  }
+  .imagenesProductos{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 40px;
+    div{
+        align-items: center;
+        background-color: $color-items;
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 20px;
+        width: $width-img-productos;
+        .itemChu{
+            background-image: url("img/churrasquito.png");
+            height: $height-img-productos;
+            width: $width-img-productos;
+        }
+        .itemCome{
+            background-image: url("img/comedero.png");
+            height: $height-img-productos;
+            width: $width-img-productos;
+        }
+        .itemHueso{
+            background-image: url("img/Huesito.png");
+            height: $height-img-productos;
+            width: $width-img-productos;
+        }
+        p{
+            margin: 0;
+            font-size: 13px;
+            font-weight: 600;
             color: $color-principal;
-            display: flex;
-            flex-direction: column;
-            height: 140px;
-            justify-content: flex-start;
-            width: 370px;  
         }
-        .titulo1{
-            background-color: $color-texto-btn;
-            border-radius: 5px;
-            font-size: 25px;
-            height: 54px;
-            padding-top: 15px;
-            text-align:  center;
-            width: 365px;
+        .precio{
+            color: $color-secundario;
         }
-        .btnComederos{
-            background-color: $color-secundario;
-            border-radius: 5px;
-            border-style: none;
-            color: $color-texto-btn;
-            font-size: 16px;
-            height: 49px;
-            width: 141px;
-        }
-        
+       
     }
+  }
 }
-
 
 /*SMARTPHONES MÁS GRANDES, LANDSCAPE Y TABLETS*/
-@media (min-width: 481px) AND (max-width: 768px){
-    header{
-        background-color: $color-principal;
-    }
+@media (min-width: 481px) AND (max-width: 768px) {
+  header {
+    background-color: $color-principal;
+  }
 }
-
