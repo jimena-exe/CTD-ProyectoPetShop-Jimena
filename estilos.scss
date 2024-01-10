@@ -4,9 +4,9 @@ $color-barra1: #222222;
 $color-texto-sec: #666666;
 $color-texto-btn: #ffffff;
 $color-texto-footer: #8a8787;
-$height-img-productos:245.92px;
-$width-img-productos:239px;
-$color-items:#FBFAF6;
+$height-img-items: 245.92px;
+$width-img-items: 239px;
+$color-items: #fbfaf6;
 
 body {
   margin: 0;
@@ -36,7 +36,7 @@ body {
     .logoPrincipal {
       background-image: url(img/Logo.png);
       width: 167px;
-      height: 19px;
+      height: 21px;
     }
     .hamburguesa {
       background-image: url(img/menu-icon1.png);
@@ -109,54 +109,59 @@ body {
       width: 212.89px;
     }
     div {
-        display: flex;
-        width: 400px;
-        margin: 10px;
-        justify-content: space-evenly;
+      display: flex;
+      width: 400px;
+      margin: 10px;
+      justify-content: space-evenly;
     }
     a {
-        text-decoration: none;
-        color: $color-texto-footer;
+      text-decoration: none;
+      color: $color-texto-footer;
     }
   }
-  .imagenesProductos{
+  .imagenesProductos {
     display: flex;
     align-items: center;
     flex-direction: column;
     margin-top: 40px;
-    div{
-        align-items: center;
-        background-color: $color-items;
-        display: flex;
-        flex-direction: column;
-        margin-bottom: 20px;
-        width: $width-img-productos;
-        .itemChu{
-            background-image: url("img/churrasquito.png");
-            height: $height-img-productos;
-            width: $width-img-productos;
-        }
-        .itemCome{
-            background-image: url("img/comedero.png");
-            height: $height-img-productos;
-            width: $width-img-productos;
-        }
-        .itemHueso{
-            background-image: url("img/Huesito.png");
-            height: $height-img-productos;
-            width: $width-img-productos;
-        }
-        p{
-            margin: 0;
-            font-size: 13px;
-            font-weight: 600;
-            color: $color-principal;
-        }
-        .precio{
-            color: $color-secundario;
-        }
-       
+    div {
+      align-items: center;
+      background-color: $color-items;
+      display: flex;
+      flex-direction: column;
+      margin-bottom: 20px;
+      width: $width-img-productos;
+      .itemChu {
+        background-image: url("img/churrasquito.png");
+        height: $height-img-items;
+        width: $width-img-items;
+      }
+      .itemCome {
+        background-image: url("img/comedero.png");
+        height: $height-img-items;
+        width: $width-img-items;
+      }
+      .itemHueso {
+        background-image: url("img/Huesito.png");
+        height: $height-img-items;
+        width: $width-img-items;
+      }
+      p {
+        margin: 0;
+        font-size: 13px;
+        font-weight: 600;
+        color: $color-principal;
+      }
+      .precio {
+        color: $color-secundario;
+      }
     }
+  }
+  .formularioContacto {
+    background-color: #f0a83e;
+    height: 400px;
+    width: 400px;
+    display: flex;
   }
 }
 

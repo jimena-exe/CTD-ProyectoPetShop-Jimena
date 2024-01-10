@@ -140,6 +140,10 @@ body {
   .imagenesProductos div .precio {
     color: #f0a83e;
   }
+  .formulario {
+    display: flex;
+    align-items: center;
+  }
 }
 /*SMARTPHONES MÁS GRANDES, LANDSCAPE Y TABLETS*/
 @media (min-width: 481px) and (max-width: 768px) {
