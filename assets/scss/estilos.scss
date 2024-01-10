@@ -1,12 +1,4 @@
-$color-principal: #3c2313;
-$color-secundario: #f0a83e;
-$color-barra1: #222222;
-$color-texto-sec: #666666;
-$color-texto-btn: #ffffff;
-$color-texto-footer: #8a8787;
-$height-img-items: 245.92px;
-$width-img-items: 239px;
-$color-items: #fbfaf6;
+@import "variables.scss";
 
 body {
   margin: 0;
@@ -158,8 +150,50 @@ body {
     }
   }
 
-  .formularioContacto {
-    background-color: #3c2313;
+  .Contactanos h1 {
+    color: $color-principal;
+    font-size: 40px;
+    font-weight: 700;
+    text-align: center;
+  }
+  .formContactanos {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+
+    .nombreApellido,
+    .correo,
+    .telefono {
+      background-color: $color-principal;
+      border-radius: 15px;
+      border: none;
+      color: #ab9c9c;
+      font-size: 9px;
+      height: 40px;
+      margin-top: 5px;
+      padding-left: 10px;
+      width: 298px;
+    }
+    .btnsContact {
+      margin-top: 35px;
+      margin-bottom: 35px;
+
+      .btnReset,
+      .btnSubmit {
+        border: none;
+        border-radius: 25px;
+        color: $color-texto-btn;
+        height: 45px;
+        width: 199px;
+      }
+      .btnReset {
+        background-color: $color-texto-footer;
+      }
+      .btnSubmit {
+        background-color: $color-secundario;
+      }
+    }
   }
 }
 

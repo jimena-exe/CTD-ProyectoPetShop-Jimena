@@ -140,8 +140,48 @@ body {
   .imagenesProductos div .precio {
     color: #f0a83e;
   }
-  .formularioContacto {
+  .Contactanos h1 {
+    color: #3c2313;
+    font-size: 40px;
+    font-weight: 700;
+    text-align: center;
+  }
+  .formContactanos {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+  }
+  .formContactanos .nombreApellido,
+  .formContactanos .correo,
+  .formContactanos .telefono {
     background-color: #3c2313;
+    border-radius: 15px;
+    border: none;
+    color: #ab9c9c;
+    font-size: 9px;
+    height: 40px;
+    margin-top: 5px;
+    padding-left: 10px;
+    width: 298px;
+  }
+  .formContactanos .btnsContact {
+    margin-top: 35px;
+    margin-bottom: 35px;
+  }
+  .formContactanos .btnsContact .btnReset,
+  .formContactanos .btnsContact .btnSubmit {
+    border: none;
+    border-radius: 25px;
+    color: #ffffff;
+    height: 45px;
+    width: 199px;
+  }
+  .formContactanos .btnsContact .btnReset {
+    background-color: #8a8787;
+  }
+  .formContactanos .btnsContact .btnSubmit {
+    background-color: #f0a83e;
   }
 }
 /*SMARTPHONES MÁS GRANDES, LANDSCAPE Y TABLETS*/
