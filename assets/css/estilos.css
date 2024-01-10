@@ -23,12 +23,12 @@ body {
     padding: 0 20px 0 20px;
   }
   .barra-secundaria .logoPrincipal {
-    background-image: url(img/Logo.png);
+    background-image: url(/img/Logo.png);
     width: 167px;
-    height: 19px;
+    height: 23px;
   }
   .barra-secundaria .hamburguesa {
-    background-image: url(img/menu-icon1.png);
+    background-image: url(/img/menu-icon1.png);
     height: 20px;
     width: 20px;
   }
@@ -37,7 +37,7 @@ body {
   }
   .banner {
     align-items: center;
-    background-image: url(img/bowl-background\ 1.png);
+    background-image: url(/img/bowl-background\ 1.png);
     background-size: cover;
     display: flex;
     justify-content: center;
@@ -79,9 +79,9 @@ body {
     margin-top: 20px;
   }
   .productos .imgPatita {
-    background-image: url(img/pawprint\ 2.png);
+    background-image: url(/img/pawprint\ 2.png);
     background-size: cover;
-    height: 87.95px;
+    height: 88.95px;
     width: 90.38px;
   }
   .productos h1 {
@@ -110,24 +110,24 @@ body {
   }
   .imagenesProductos div {
     align-items: center;
-    background-color: #FBFAF6;
+    background-color: #fbfaf6;
     display: flex;
     flex-direction: column;
     margin-bottom: 20px;
     width: 239px;
   }
   .imagenesProductos div .itemChu {
-    background-image: url("img/churrasquito.png");
+    background-image: url("/img/churrasquito.png");
     height: 245.92px;
     width: 239px;
   }
   .imagenesProductos div .itemCome {
-    background-image: url("img/comedero.png");
+    background-image: url("/img/comedero.png");
     height: 245.92px;
     width: 239px;
   }
   .imagenesProductos div .itemHueso {
-    background-image: url("img/Huesito.png");
+    background-image: url("/img/Huesito.png");
     height: 245.92px;
     width: 239px;
   }
@@ -140,9 +140,8 @@ body {
   .imagenesProductos div .precio {
     color: #f0a83e;
   }
-  .formulario {
-    display: flex;
-    align-items: center;
+  .formularioContacto {
+    background-color: #3c2313;
   }
 }
 /*SMARTPHONES MÁS GRANDES, LANDSCAPE Y TABLETS*/
@@ -150,4 +149,6 @@ body {
   header {
     background-color: #3c2313;
   }
-}/*# sourceMappingURL=estilos.css.map */
+}
+
+/*# sourceMappingURL=estilos.css.map */
