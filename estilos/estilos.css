@@ -1,0 +1,201 @@
+@charset "UTF-8";
+body {
+  margin: 0;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+/*
+@mixin display{
+    display: flex;
+    justify-content: center;
+}*/
+/*MOBILE FIRST*/
+@media (max-width: 480px) {
+  .barra-superior {
+    display: none;
+  }
+  .barra-secundaria {
+    align-items: center;
+    background-color: #f0a83e;
+    display: flex;
+    height: 54px;
+    justify-content: space-between;
+    padding: 0 20px 0 20px;
+  }
+  .barra-secundaria .logoPrincipal {
+    background-image: url(/img/Logo.png);
+    width: 167px;
+    height: 23px;
+  }
+  .barra-secundaria .hamburguesa {
+    background-image: url(/img/menu-icon1.png);
+    height: 20px;
+    width: 20px;
+  }
+  .barra-secundaria .infoPrincipal {
+    display: none;
+  }
+  .banner {
+    align-items: center;
+    background-image: url(/img/bowl-background\ 1.png);
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    height: 440px;
+    width: 100%;
+    /*@include display;*/
+  }
+  .banner .info-banner {
+    align-items: flex-end;
+    color: #3c2313;
+    display: flex;
+    flex-direction: column;
+    height: 140px;
+    justify-content: flex-start;
+    width: 370px;
+  }
+  .banner .titulo1 {
+    background-color: #ffffff;
+    border-radius: 5px;
+    font-size: 25px;
+    height: 54px;
+    padding-top: 15px;
+    text-align: center;
+    width: 365px;
+  }
+  .banner .btnComederos {
+    background-color: #f0a83e;
+    border-radius: 5px;
+    border-style: none;
+    color: #ffffff;
+    font-size: 16px;
+    height: 49px;
+    width: 141px;
+  }
+  .productos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+  }
+  .productos .imgPatita {
+    background-image: url(/img/pawprint\ 2.png);
+    background-size: cover;
+    height: 88.95px;
+    width: 90.38px;
+  }
+  .productos h1 {
+    color: #3c2313;
+    font-size: 40px;
+    font-weight: 700;
+    margin-top: 5px;
+    text-align: center;
+    width: 212.89px;
+  }
+  .productos div {
+    display: flex;
+    width: 400px;
+    margin: 10px;
+    justify-content: space-evenly;
+  }
+  .productos a {
+    text-decoration: none;
+    color: #8a8787;
+  }
+  .imagenesProductos {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 40px;
+  }
+  .imagenesProductos div {
+    align-items: center;
+    background-color: #fbfaf6;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+    width: 239px;
+  }
+  .imagenesProductos div .itemChu {
+    background-image: url("/img/churrasquito.png");
+    height: 245.92px;
+    width: 239px;
+  }
+  .imagenesProductos div .itemCome {
+    background-image: url("/img/comedero.png");
+    height: 245.92px;
+    width: 239px;
+  }
+  .imagenesProductos div .itemHueso {
+    background-image: url("/img/Huesito.png");
+    height: 245.92px;
+    width: 239px;
+  }
+  .imagenesProductos div p {
+    margin: 0;
+    font-size: 13px;
+    font-weight: 600;
+    color: #3c2313;
+  }
+  .imagenesProductos div .precio {
+    color: #f0a83e;
+  }
+  .Contactanos h1 {
+    color: #3c2313;
+    font-size: 40px;
+    font-weight: 700;
+    text-align: center;
+  }
+  .formContactanos {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+  }
+  .formContactanos .nombreApellido,
+  .formContactanos .correo,
+  .formContactanos .telefono {
+    background-color: #3c2313;
+    border-radius: 15px;
+    border: none;
+    color: #ab9c9c;
+    font-size: 9px;
+    height: 40px;
+    margin-top: 5px;
+    padding-left: 10px;
+    width: 298px;
+  }
+  .formContactanos .btnsContact {
+    margin-top: 35px;
+    margin-bottom: 35px;
+  }
+  .formContactanos .btnsContact .btnReset,
+  .formContactanos .btnsContact .btnSubmit {
+    border: none;
+    border-radius: 25px;
+    color: #ffffff;
+    height: 45px;
+    width: 199px;
+  }
+  .formContactanos .btnsContact .btnReset {
+    background-color: #8a8787;
+  }
+  .formContactanos .btnsContact .btnSubmit {
+    background-color: #f0a83e;
+  }
+  .barraNovedades {
+    background-color: #f0a83e;
+  }
+  .informacion {
+    background-color: #3c2313;
+  }
+  .derechos {
+    background-color: #222222;
+  }
+}
+/*SMARTPHONES MÁS GRANDES, LANDSCAPE Y TABLETS*/
+@media (min-width: 481px) and (max-width: 768px) {
+  header {
+    background-color: #3c2313;
+  }
+}/*# sourceMappingURL=estilos.css.map */

@@ -197,7 +197,15 @@ body {
   }
 
   .barraNovedades {
-    background-color: olive;
+    background-color: $color-secundario;
+  }
+
+  .informacion {
+    background-color: $color-principal;
+  }
+
+  .derechos {
+    background-color: $color-barra1;
   }
 }
 
