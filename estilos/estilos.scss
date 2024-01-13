@@ -198,6 +198,48 @@ body {
 
   .barraNovedades {
     background-color: $color-secundario;
+    height: 101px;
+    font-weight: 700;
+    div {
+      align-items: center;
+      display: flex;
+      color: $color-texto-btn;
+      font-size: 20px;
+      span {
+        margin-left: 25px;
+      }
+      .iconEmail {
+        background-image: url(/img/enviar-correo\ 1.png);
+        height: 37px;
+        width: 40px;
+      }
+    }
+    form {
+      align-items: center;
+      display: flex;
+      margin-top: 10px;
+      justify-content: center;
+      .correo2 {
+        border: none;
+        border-radius: 15px;
+        color: #a0a0a0;
+        font-size: 10px;
+        height: 40px;
+        padding-left: 10px;
+        width: 261px;
+      }
+      .btnSub {
+        background-color: $color-principal;
+        border: none;
+        border-radius: 15px;
+        color: $color-texto-btn;
+        font-weight: 700;
+        font-size: 15px;
+        height: 35px;
+        margin-left: 15px;
+        width: 100px;
+      }
+    }
   }
 
   .informacion {

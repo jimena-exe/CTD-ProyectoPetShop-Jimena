@@ -185,6 +185,48 @@ body {
   }
   .barraNovedades {
     background-color: #f0a83e;
+    height: 101px;
+    font-weight: 700;
+  }
+  .barraNovedades div {
+    align-items: center;
+    display: flex;
+    color: #ffffff;
+    font-size: 20px;
+  }
+  .barraNovedades div span {
+    margin-left: 25px;
+  }
+  .barraNovedades div .iconEmail {
+    background-image: url(/img/enviar-correo\ 1.png);
+    height: 37px;
+    width: 40px;
+  }
+  .barraNovedades form {
+    align-items: center;
+    display: flex;
+    margin-top: 10px;
+    justify-content: center;
+  }
+  .barraNovedades form .correo2 {
+    border: none;
+    border-radius: 15px;
+    color: #a0a0a0;
+    font-size: 10px;
+    height: 40px;
+    padding-left: 10px;
+    width: 261px;
+  }
+  .barraNovedades form .btnSub {
+    background-color: #3c2313;
+    border: none;
+    border-radius: 15px;
+    color: #ffffff;
+    font-weight: 700;
+    font-size: 15px;
+    height: 35px;
+    margin-left: 15px;
+    width: 100px;
   }
   .informacion {
     background-color: #3c2313;
