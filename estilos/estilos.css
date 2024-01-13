@@ -222,14 +222,42 @@ body {
     border: none;
     border-radius: 15px;
     color: #ffffff;
-    font-weight: 700;
     font-size: 15px;
+    font-weight: 700;
     height: 35px;
     margin-left: 15px;
     width: 100px;
   }
   .informacion {
+    align-items: center;
     background-color: #3c2313;
+    display: flex;
+    flex-direction: column;
+  }
+  .informacion .logo2 {
+    background-image: url(/img/catdog-blanco.png);
+    height: 23px;
+    width: 165px;
+  }
+  .informacion .localidad,
+  .informacion .NumTelefono,
+  .informacion .Correo {
+    display: flex;
+  }
+  .informacion .iconLocal,
+  .informacion .iconTel,
+  .informacion .iconCorreo {
+    height: 66px;
+    width: 66px;
+  }
+  .informacion .iconLocal {
+    background-image: url(/img/location-icon.png);
+  }
+  .informacion .iconTel {
+    background-image: url(/img/tel-icon.png);
+  }
+  .informacion .iconCorreo {
+    background-image: url(/img/correo-icon.png);
   }
   .derechos {
     background-color: #222222;

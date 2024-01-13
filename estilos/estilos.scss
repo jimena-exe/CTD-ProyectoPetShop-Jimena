@@ -233,8 +233,8 @@ body {
         border: none;
         border-radius: 15px;
         color: $color-texto-btn;
-        font-weight: 700;
         font-size: 15px;
+        font-weight: 700;
         height: 35px;
         margin-left: 15px;
         width: 100px;
@@ -243,7 +243,37 @@ body {
   }
 
   .informacion {
+    align-items: center;
     background-color: $color-principal;
+    display: flex;
+    flex-direction: column;
+
+    .logo2 {
+      background-image: url(/img/catdog-blanco.png);
+      height: 23px;
+      width: 165px;
+    }
+    .localidad,
+    .NumTelefono,
+    .Correo {
+      display: flex;
+    }
+
+    .iconLocal,
+    .iconTel,
+    .iconCorreo {
+      height: 66px;
+      width: 66px;
+    }
+    .iconLocal {
+      background-image: url(/img/location-icon.png);
+    }
+    .iconTel {
+      background-image: url(/img/tel-icon.png);
+    }
+    .iconCorreo {
+      background-image: url(/img/correo-icon.png);
+    }
   }
 
   .derechos {
